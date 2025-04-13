@@ -1,6 +1,6 @@
-Iniciar o projeto Django
+# Iniciar o projeto Django
 
-```
+```bash
 python -m venv venv
 . venv/bin/activate
 pip install django
@@ -9,7 +9,7 @@ django-admin startproject project .
 
 Configurar o git
 
-```
+```bash
 git config --global user.name 'Seu nome'
 git config --global user.email 'seu_email@gmail.com'
 git config --global init.defaultBranch main
