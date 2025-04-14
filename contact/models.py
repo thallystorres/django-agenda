@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 # Create your models here.
 
 # id (primary key - automático)
@@ -14,7 +15,6 @@ from django.utils import timezone
 
 class Category(models.Model):
     name = models.CharField(max_length=50)  # type: ignore
-
 
     class Meta:
         verbose_name = 'Category'
@@ -34,7 +34,13 @@ class Contact(models.Model):
     show = models.BooleanField(default=True)  # type: ignore
     picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m')
     category = models.ForeignKey(
-        Category, on_delete=models.SET_NULL, null=True  # type: ignore
+        Category,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,  # type: ignore
+    )
+    owner = models.ForeignKey(
+        User, on_delete=models.SET_NULL, blank=True, null=True  # type: ignore
     )
 
     def __str__(self) -> str:
