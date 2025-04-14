@@ -6,7 +6,7 @@
     <h2>Create Contact</h2>
     
     <form
-    action=""
+    action="{% url "contact:create" %}"
     method="POST"
     enctype="multipart/form-data"
     >
@@ -15,8 +15,10 @@
 
     <div class="form-content">
         <div class="form-group">
-            <label for="id_first_name">LABEL</label>
-                <input type="text" name="first_name" maxlength="255">
+            <label for="id_first_name">First name</label>
+                <input type="text" name="first_name" maxlength="255" id="id_first_name">
+            <label for="id_first_name">Last name</label>
+                <input type="text" name="last_name" maxlength="255" id="id_last_name">
         </div>
     </div>
 
