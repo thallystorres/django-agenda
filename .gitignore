@@ -136,3 +136,4 @@ GitHub.sublime-settings
 .history
 static
 media
+project/local_settings.py
