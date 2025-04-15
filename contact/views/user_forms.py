@@ -51,6 +51,7 @@ def login_view(request):
 
 def logout_view(request):
     auth.logout(request)
+    messages.info(request, 'Logout successful.')
     return redirect('contact:login')
 
 
