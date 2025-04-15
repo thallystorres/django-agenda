@@ -10,5 +10,20 @@
     <p><b>Phone: </b> {{ contact.phone }}</p>
     <p><b>Description: </b> {{ contact.description }}</p>
     <p><b>Category: </b> {{ contact.category.name }}</p>
+    <div class="contact-links">
+        <a
+        class="btn btn-link"
+        href="{% url "contact:update" contact.id %}">Update</a>
+
+        <form action="{% url "contact:delete" contact.id%}" method="POST">
+            {% csrf_token %}
+            
+            <button
+            class="btn btn-link btn-delete"
+            onclick="showVerification(event)" 
+            type="submit">Delete</button>
+
+        </form>
+    </div>
 </div>
 {% endblock content %}
