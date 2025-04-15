@@ -50,6 +50,7 @@
   
   img,
   svg {
+    border-radius: 5px;
     display: block;
     max-width: 100%;
   }
