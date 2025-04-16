@@ -2,13 +2,22 @@
 
 **django-agenda** is a web application built with Django for managing contacts and scheduling appointments. It offers an intuitive interface to add, edit, and view contacts, as well as to schedule appointments efficiently.
 
-## 📋 Features
+## 🚀 Demo
 
-- Create, edit, and delete contacts
-- Schedule appointments with date and time
-- View upcoming appointments
-- User authentication system
-- Responsive and user-friendly interface
+A video showing the features of the website <a href="https://youtu.be/Mbav1DLsPy0" target="_blank">here</a>.
+
+## 💻 Features
+
+**django-agenda** is a Django-based web application designed for efficient contact management. It provides a user-friendly interface to manage contacts seamlessly.
+
+### 🔐 User Authentication and Verification
+
+- **Secure Authentication**: Implements Django's built-in authentication system, allowing users to register, log in, and log out securely.
+
+### 👥 User and Contact Management (CRUD)
+
+- **User Management**: Administrators can create, read, update, and delete user accounts, managing access and permissions effectively.
+- **Contact Management**: Users can add new contacts, view detailed contact information, update existing contacts, and remove contacts as needed.
 
 ## 🛠️ Technologies Used
 
