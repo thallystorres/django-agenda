@@ -2,8 +2,6 @@
 
 **django-agenda** is a web application built with Django for managing contacts and scheduling appointments. It offers an intuitive interface to add, edit, and view contacts, as well as to schedule appointments efficiently.
 
-## 🚀 Demo (WIP)
-
 ## 📋 Features
 
 - Create, edit, and delete contacts
@@ -80,7 +78,7 @@ django-agenda/
 
 ## 🤡 utils/mock.py
 
-Run this script to mock data in the application's database. You can change the number of contacts to be mocked by editing the `NUMBER_OF_OBJECTS` constant.
+Run this script with `python utils/mock.py` to mock data in the application's database. You can change the number of contacts to be mocked by editing the `NUMBER_OF_OBJECTS` constant.
 
 ## 📄 License
 
