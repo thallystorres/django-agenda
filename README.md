@@ -6,6 +6,14 @@
 
 A video showing the features of the website <a href="https://youtu.be/Mbav1DLsPy0" target="_blank">here</a>.
 
+## 🗯️ I DID IT!!
+
+I've successfully deployed the site on my personal virtual machine.  
+You can access it at: [http://192.168.0.7](http://192.168.0.7) — feel free to test it out!
+
+In this deployment, I used **Gunicorn** and **Nginx** (as a reverse proxy) to serve the HTML, static files, and the Python backend application.  
+I also integrated a **PostgreSQL** database for more robust data management.
+
 ## 💻 Features
 
 **django-agenda** is a Django-based web application designed for efficient contact management. It provides a user-friendly interface to manage contacts seamlessly.
